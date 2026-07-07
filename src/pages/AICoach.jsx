@@ -44,7 +44,7 @@ const AICoach = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/coach/chat', { message: userText, history: messages });
+      const response = await axios.post('https://ecofit-backend.vercel.app/api/coach/chat', { message: userText, history: messages });
       setMessages(prev => [...prev, { role: 'ai', text: response.data.reply }]);
     } catch {
       setMessages(prev => [...prev, { role: 'ai', text: "Telemetry link interrupted. Please resend." }]);

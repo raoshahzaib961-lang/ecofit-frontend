@@ -14,7 +14,7 @@ const HabitTracker = ({ theme, cardBase }) => {
 
   const fetchHabits = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/habit-tracker', { headers: getHeaders() });
+      const res = await axios.get('https://ecofit-backend.vercel.app/api/habit-tracker', { headers: getHeaders() });
       setHabits(res.data);
     } catch (err) {
       console.error("❌ HABIT FETCH ERROR: Check if token exists or middleware is failing:", err.response?.data || err.message);
@@ -25,7 +25,7 @@ const HabitTracker = ({ theme, cardBase }) => {
 
   const toggleHabitCompletion = async (id, currentStatus) => {
     try {
-      const res = await axios.put(`http://localhost:5000/api/habit-tracker/toggle/${id}`, 
+      const res = await axios.put(`https://ecofit-backend.vercel.app/api/habit-tracker/toggle/${id}`, 
         { completed: !currentStatus }, 
         { headers: getHeaders() }
       );
@@ -41,7 +41,7 @@ const HabitTracker = ({ theme, cardBase }) => {
     if (!newHabitName.trim()) return;
 
     try {
-      const res = await axios.post('http://localhost:5000/api/habit-tracker/create', 
+      const res = await axios.post('https://ecofit-backend.vercel.app/api/habit-tracker/create', 
         { name: newHabitName, category: newHabitCat }, 
         { headers: getHeaders() }
       );

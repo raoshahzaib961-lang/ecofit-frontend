@@ -62,7 +62,7 @@ const Onboarding = () => {
       const token = localStorage.getItem('eco_fit_token');
 
       const response = await axios.put(
-        'http://localhost:5000/api/auth/update-biometrics', 
+        'https://ecofit-backend.vercel.app/api/auth/update-biometrics', 
         completeProfileData,
         { headers: { Authorization: `Bearer ${token}` } }
       );

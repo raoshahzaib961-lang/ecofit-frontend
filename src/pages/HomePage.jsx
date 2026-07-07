@@ -91,7 +91,7 @@ const HomePage = () => {
     setWeatherLoading(true);
     setWeatherError(false);
     try {
-      let targetUrl = `http://localhost:5000/api/weather/current`;
+      let targetUrl = `https://ecofit-backend.vercel.app/api/weather/current`;
       if (lat && lon) {
         targetUrl += `?lat=${lat}&lon=${lon}`;
       } else {
@@ -117,7 +117,7 @@ const HomePage = () => {
     if (!token) { navigate('/'); return; }
 
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/daily-log', {
+      const response = await axios.get('https://ecofit-backend.vercel.app/api/auth/daily-log', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setDashboardData(response.data);
@@ -157,7 +157,7 @@ const HomePage = () => {
   const syncToProgressLedger = async (updatedLog) => {
     const token = localStorage.getItem('eco_fit_token');
     try {
-      await axios.post('http://localhost:5000/api/progress', {
+      await axios.post('https://ecofit-backend.vercel.app/api/progress', {
         weight: dashboardData.weight || 0,
         caloriesConsumed: updatedLog.caloriesConsumed || 0,
         caloriesBurned: updatedLog.caloriesBurned || 0,
@@ -175,7 +175,7 @@ const HomePage = () => {
   const handleTrackerUpdate = async (type, value) => {
     const token = localStorage.getItem('eco_fit_token');
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/update-tracker', 
+      const response = await axios.post('https://ecofit-backend.vercel.app/api/auth/update-tracker', 
         { type, value },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -213,7 +213,7 @@ const HomePage = () => {
     setProcessingExercise(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/log-exercise', {
+      const response = await axios.post('https://ecofit-backend.vercel.app/api/auth/log-exercise', {
         category: exerciseCategory,
         activityType,
         durationOrSets: Number(durationOrSets)
@@ -249,7 +249,7 @@ const HomePage = () => {
     setProcessingFood(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/log-food', {
+      const response = await axios.post('https://ecofit-backend.vercel.app/api/auth/log-food', {
         foodDescription: foodInput
       }, {
         headers: { Authorization: `Bearer ${token}` }

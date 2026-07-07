@@ -28,7 +28,7 @@ const WeeklyProgressReport = () => {
 
     try {
       // Connects directly to your progress router engine
-      const response = await axios.get('http://localhost:5000/api/progress/summary?period=weekly', {
+      const response = await axios.get('https://ecofit-backend.vercel.app/api/progress/summary?period=weekly', {
         headers: { Authorization: `Bearer ${token}` }
       });
       

@@ -14,7 +14,7 @@ const GoalTracker = ({ theme, cardBase, showModal }) => {
 
   const fetchGoalData = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/goals', { headers: getHeaders() });
+      const res = await axios.get('https://ecofit-backend.vercel.app/api/goals', { headers: getHeaders() });
       const activeWeightGoal = res.data.data?.find(g => g.type === 'weight_loss');
       if (activeWeightGoal) {
         if (activeWeightGoal.weightTimeline?.length > 0) setWeightHistory(activeWeightGoal.weightTimeline);
@@ -33,7 +33,7 @@ const GoalTracker = ({ theme, cardBase, showModal }) => {
     const numericWeight = parseFloat(currentWeight);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/goals/weight', { weight: numericWeight }, { headers: getHeaders() });
+      const res = await axios.post('https://ecofit-backend.vercel.app/api/goals/weight', { weight: numericWeight }, { headers: getHeaders() });
       if (res.data.success && res.data.data.weightTimeline) {
         setWeightHistory(res.data.data.weightTimeline);
         if (showModal) showModal("Weight registered successfully inside MongoDB!");
@@ -52,7 +52,7 @@ const GoalTracker = ({ theme, cardBase, showModal }) => {
     reader.onloadend = async () => {
       const base64Data = reader.result;
       try {
-        await axios.post('http://localhost:5000/api/goals/progress-image', { image: base64Data }, { headers: getHeaders() });
+        await axios.post('https://ecofit-backend.vercel.app/api/goals/progress-image', { image: base64Data }, { headers: getHeaders() });
         setProgressImage(base64Data);
         if (showModal) showModal("Biometric snapshot synchronized with cloud!");
       } catch (err) {

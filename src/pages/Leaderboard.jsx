@@ -17,7 +17,7 @@ const Leaderboard = () => {
                 const token = localStorage.getItem('eco_fit_token') || localStorage.getItem('token');
                 
                 // Fetching from social path
-                const res = await axios.get('http://localhost:5000/api/social/leaderboard', {
+                const res = await axios.get('https://ecofit-backend.vercel.app/api/social/leaderboard', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 
