@@ -22,7 +22,7 @@ const Auth = () => {
         setError('');
         setLoading(true);
 
-        const BACKEND_URL = 'http://localhost:5000/api/auth'; 
+        const BACKEND_URL = 'https://ecofit-backend.vercel.app/api/auth'; 
 
         try {
             if (isLogin) {
