@@ -66,13 +66,13 @@ src/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/ecofit-ai.git
+https://github.com/raoshahzaib961-lang/ecofit-frontend.git
 ```
 
 Navigate to the project
 
 ```bash
-cd ecofit-ai
+cd ecofit-frontend
 ```
 
 Install dependencies
