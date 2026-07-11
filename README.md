@@ -6,24 +6,7 @@ The application leverages TensorFlow.js for real-time pose detection, Groq AI fo
 
 ---
 
-## 🚀 Live Demo
 
-Coming Soon
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Landing Page
-- AI Fitness Assistant
-- Pose Detection
-- Workout Dashboard
-- Exercise Tracking
-- Mobile Responsive View
-
----
 
 ## ✨ Features
 
@@ -36,7 +19,8 @@ Add screenshots of:
 - ⚡ Fast Performance with Vite
 - 🎨 Modern UI/UX
 - 🔒 Clean and Scalable Architecture
-
+    AI FOOD SCANNER
+  Weahther Intelligence 
 ---
 
 ## 🤖 AI Technologies Used
@@ -119,14 +103,7 @@ The project showcases real-world AI integration, frontend engineering, and moder
 
 ---
 
-## 📈 Future Improvements
 
-- Personalized Workout Plans
-- Nutrition Recommendations
-- Voice Assistant
-- User Authentication
-- Cloud Database Integration
-- Progress Analytics Dashboard
 
 ---
 
