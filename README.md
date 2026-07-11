@@ -1,16 +1,145 @@
-# React + Vite
+# 🏋️ EcoFit AI – Smart Fitness Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EcoFit AI is an intelligent fitness web application that combines Artificial Intelligence, computer vision, and modern web technologies to provide users with a personalized workout experience.
 
-Currently, two official plugins are available:
+The application leverages TensorFlow.js for real-time pose detection, Groq AI for intelligent fitness guidance, and a modern React frontend to create an interactive and responsive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Coming Soon
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Landing Page
+- AI Fitness Assistant
+- Pose Detection
+- Workout Dashboard
+- Exercise Tracking
+- Mobile Responsive View
+
+---
+
+## ✨ Features
+
+- 🤖 AI Fitness Assistant
+- 🧠 Groq API Integration
+- 🎯 Real-Time Pose Detection
+- 💪 Exercise Tracking
+- 📊 Workout Progress Monitoring
+- 📱 Fully Responsive Design
+- ⚡ Fast Performance with Vite
+- 🎨 Modern UI/UX
+- 🔒 Clean and Scalable Architecture
+
+---
+
+## 🤖 AI Technologies Used
+
+- TensorFlow.js
+- Groq API
+- Computer Vision
+- Pose Detection
+- AI-Based Fitness Guidance
+
+---
+
+## 🛠 Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- TensorFlow.js
+- Groq API
+- HTML5
+- CSS3
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+├── pages/
+├── hooks/
+├── services/
+├── assets/
+├── utils/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ecofit-ai.git
+```
+
+Navigate to the project
+
+```bash
+cd ecofit-ai
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 🎯 Purpose
+
+EcoFit AI was developed to demonstrate practical implementation of Artificial Intelligence in fitness applications using TensorFlow.js, Groq API, and React.
+
+The project showcases real-world AI integration, frontend engineering, and modern web application development.
+
+---
+
+## 📈 Future Improvements
+
+- Personalized Workout Plans
+- Nutrition Recommendations
+- Voice Assistant
+- User Authentication
+- Cloud Database Integration
+- Progress Analytics Dashboard
+
+---
+
+## 👨‍💻 Author
+
+Rao Shahzaib 
+
+Full Stack Developer
+
+MERN Stack • React • AI Integration • TensorFlow.js • Node.js • PHP • MySQL
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
